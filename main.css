@@ -1,0 +1,28 @@
+.startQuiz,
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.stats {
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+
+.imageArea {
+  border: 1px solid black;
+  width: 300px;
+}
+
+.nflLogo {
+  background-color: white;
+  width: 300px;
+}
