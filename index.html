@@ -4,182 +4,39 @@
   <head>
 	  <meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width">
-	  <title>NFL Quiz... Kinda</title>
+	  <title>Ultimate NFL Quiz? | Nope</title>
 	  <link href="main.css" rel="stylesheet" type="text/css" />
   </head>
 
   <body>
 
-	  <main>
-
-		  <header role="banner" class="header">
-			  <h1>The Not-Even-Close-To-Ultimate NFL Quiz</h1>
-        <section>
-          <ul>
-            <li class="stats">Question:
-              <span class="questionNumber">0</span>/7</li>
-            <li class="stats">Score:
+		<header role="banner" class="header">
+			<h1>The Not-Even-Close-To-Ultimate NFL Quiz</h1>
+      <section>
+        <a href="index.html"></a>
+      </section>
+      <section>
+        <ul>
+          <li class="stats">Question:
+            <span class="questionNumber">0</span>/7</li>
+          <li class="stats">Score:
               <span class="score">0</span>
-            </li>
-          </ul>
-        </section>
-      </header>
+          </li>
+        </ul>
+      </section>
+    </header>
 
+    <main>
+      <section role="region" class="footballBox">
 		  <section class="startQuiz box">
         <h2>Are you ready for some football... questions?</h2>
-			  <a href="index.html">
-				<img class="nflLogo" src="0_NFL_Logo.png" alt="NFL shield logo" />
-        </a>
-        <button type="button" class="startButton button">Yes, I'm ready.</button>
+				<img class="nflLogo" src="images/0_NFL_Logo.png" alt="NFL shield logo" />
+        <button type="button" class="startButton button button">Yes, I'm ready.</button>
       </section>
-
-      <section class="questionBox1 box">
-        <form>
-          <h3>Question 1</h3>
-          <div class="questionImage">
-            <a href="index.html">
-				      <img class="imageArea" src="1_Tom_Brady.jpg" alt="Tom Brady" />
-            </a>
-          </div>
-          <fieldset>
-            <legend class="questionText">How many Super Bowls has Tom Brady won?</legend>
-            <input type="radio" name="answer"> 7<br>
-            <input type="radio" name="answer"> 6<br>
-            <input type="radio" name="answer"> 5<br>
-            <input type="radio" name="answer"> 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
+      <section class="questionBox box otherBox"></section>
+      <section class="response box otherBox"></section>
+      <section class="final box otherBox"></section>
       </section>
-
-      <section class="questionBox2 box">
-        <form>
-          <h3>Question 2</h3>
-          <fieldset>
-            <legend class="questionText">Question 2 goes here.</legend>
-            <input type="radio" name="answer"> Answer 1<br>
-            <input type="radio" name="answer"> Answer 2<br>
-            <input type="radio" name="answer"> Answer 3<br>
-            <input type="radio" name="answer"> Answer 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
-      </section>
-
-      <section class="questionBox3 box">
-        <form>
-          <h3>Question 3</h3>
-          <fieldset>
-            <legend class="questionText">Question 3 goes here.</legend>
-            <input type="radio" name="answer"> Answer 1<br>
-            <input type="radio" name="answer"> Answer 2<br>
-            <input type="radio" name="answer"> Answer 3<br>
-            <input type="radio" name="answer"> Answer 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
-      </section>
-
-      <section class="questionBox4 box">
-        <form>
-          <h3>Question 4</h3>
-          <fieldset>
-            <legend class="questionText">Question 4 goes here.</legend>
-            <input type="radio" name="answer"> Answer 1<br>
-            <input type="radio" name="answer"> Answer 2<br>
-            <input type="radio" name="answer"> Answer 3<br>
-            <input type="radio" name="answer"> Answer 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
-      </section>
-
-      <section class="questionBox5 box">
-        <form>
-          <h3>Question 5</h3>
-          <fieldset>
-            <legend class="questionText">Question 5 goes here.</legend>
-            <input type="radio" name="answer"> Answer 1<br>
-            <input type="radio" name="answer"> Answer 2<br>
-            <input type="radio" name="answer"> Answer 3<br>
-            <input type="radio" name="answer"> Answer 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
-      </section>
-
-      <section class="questionBox6 box">
-        <form>
-          <h3>Question 6</h3>
-          <fieldset>
-            <legend class="questionText">Question 6 goes here.</legend>
-            <input type="radio" name="answer"> Answer 1<br>
-            <input type="radio" name="answer"> Answer 2<br>
-            <input type="radio" name="answer"> Answer 3<br>
-            <input type="radio" name="answer"> Answer 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
-      </section>
-
-      <section class="questionBox7 box">
-        <form>
-          <h3>Question 7</h3>
-          <fieldset>
-            <legend class="questionText">Question 7 goes here.</legend>
-            <input type="radio" name="answer"> Answer 1<br>
-            <input type="radio" name="answer"> Answer 2<br>
-            <input type="radio" name="answer"> Answer 3<br>
-            <input type="radio" name="answer"> Answer 4<br>
-            <input type="submit" class="submitButton">
-          </fieldset>
-        </form>
-      </section>
-
-      <section class="responseCorrect box">
-        <h3>That's right! Moving on...</h3>
-        <div>
-          <a href="index.html">
-				    <img class="imageArea" src="Correct_First_Down.gif" alt="referee signalling a first down" />
-          </a>
-        </div>
-        <button type="button" class="nextQuestionButton button">Next Question</button>
-      </section>
-
-      <section class="responseWrong box">
-        <h3>That's... wrong. But let's continue.</h3>
-        <div>
-          <a href="index.html">
-				    <img class="imageArea" src="Wrong_Incomplete.gif" alt="referee signalling a incomplete pass" />
-          </a>
-        </div>
-        <button type="button" class="nextQuestionButton button">Next Question</button>
-      </section>
-
-      <section class="final box">
-        <h3>And we're done with the quiz!</h3>
-        <p>You got 'X' questions correct.</p>
-        <div>
-          <a href="index.html">
-				    <img class="imageArea" src="Final_Touchdown.gif" alt="referee counting and signalling touchdown" />
-          </a>
-        </div>
-        <p>You really know your football!</p>
-        <button type="button" class="nextQuestionButton button">Restart Quiz</button>
-      </section>
-
-      <section class="final box">
-        <h3>And we're done with the quiz!</h3>
-        <p>You got 'X' questions correct.</p>
-        <div>
-          <a href="index.html">
-				    <img class="imageArea" src="Final_Penalty_Flags.gif" alt="referee throwing multiple penalty flags" />
-          </a>
-        </div>
-        <p>You... need to study your football.</p>
-        <button type="button" class="nextQuestionButton button">Restart Quiz</button>
-      </section>
-
     </main>
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
