@@ -10,7 +10,7 @@ const STORE = [
     correctAnswer:
       '6',
     image:
-      'images/1_Tom_Brady.jpg',
+      '1_Tom_Brady.jpg',
     alt:
       'quarterback Tom Brady'
   },
@@ -25,7 +25,7 @@ const STORE = [
     correctAnswer:
       '22,895',
     image:
-      'images/2_Jerry_Rice.png',
+      '2_Jerry_Rice.png',
     alt:
       'wide receiver Jerry Rice'
   },
@@ -40,7 +40,7 @@ const STORE = [
     correctAnswer:
       '9',
     image:
-      'images/3_Walter_Jones.jpg',
+      '3_Walter_Jones.jpg',
     alt:
       'left tackle Walter Jones'
   },
@@ -55,7 +55,7 @@ const STORE = [
     correctAnswer:
       '8',
     image:
-      'images/4_Drew_Brees.jpg',
+      '4_Drew_Brees.jpg',
     alt:
       'quarterback Drew Brees'
   },
@@ -70,7 +70,7 @@ const STORE = [
     correctAnswer:
       'New England 13, L.A. Rams 3',
     image:
-      'images/5_Super_Bowl_LIII_logo.jpg',
+      '5_Super_Bowl_LIII_logo.jpg',
     alt:
       'logo for Super Bowl 53'
   },
@@ -85,7 +85,7 @@ const STORE = [
     correctAnswer:
       '12',
     image:
-      'images/6_Sad_Browns_Fans.jpg',
+      '6_Sad_Browns_Fans.jpg',
     alt:
       'image of ashamed Cleveland Browns fans with paper bags covering their heads'
   },
@@ -100,7 +100,7 @@ const STORE = [
     correctAnswer:
       '64 sacks, 54 turnovers',
     image:
-      'images/7_85_Bears.jpg',
+      '7_85_Bears.jpg',
     alt:
       'image of some Chicago Bears players hoisting Head Coach Mike Ditka up on their shoulders after winning the Super Bowl following the 1985 season'
   }
@@ -201,7 +201,7 @@ function correctAnswer() {
       `<div class="responseInterior">
         <h3>That's right!</h3>
         <div>
-				    <img class="gifArea" src="gifs/Correct_First_Down.gif" alt="referee signalling a first down" />
+				    <img class="gifArea" src="Correct_First_Down.gif" alt="referee signalling a first down" />
         </div>
         <p class="movingOn">Moving on...</p>
         <button type="button" class="nextQuestionButton button">Next</button>
@@ -216,7 +216,7 @@ function wrongAnswer() {
     `<div class="responseInterior">
         <h3>Nope. Incorrect...</h3>
         <div>
-				  <img class="gifArea" src="gifs/Wrong_Incomplete.gif" alt="referee signalling a incomplete pass" />
+				  <img class="gifArea" src="Wrong_Incomplete.gif" alt="referee signalling a incomplete pass" />
         </div>
         <p class="movingOn">The correct answer is:<br>${STORE[questionNumber].correctAnswer}</p>
         <button type="button" class="nextQuestionButton button">Next</button>
@@ -239,13 +239,13 @@ function finalScore() {
   $('.final').show();
 
   const pass = [
-    'gifs/Final_Touchdown.gif',
+    'Final_Touchdown.gif',
     'referee counting and then signalling touchdown',
     'You really know your football!'
   ];
 
   const fail = [
-    'gifs/Final_Penalty_Flags.gif',
+    'Final_Penalty_Flags.gif',
     'guy throwing lots of penalty flags',
     'You... need to study your football.'
   ];
