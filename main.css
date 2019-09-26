@@ -1,28 +1,297 @@
-.startQuiz,
-.box {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #002F69;
+}
+
+main {
+  background-color: #002F69;
+}
+
+.header {
+  width: 100%;
+  font-family: 'Arial', Helvetica, sans-serif;
+  background-color: #D3D3D3;
+  text-align: center;
+  border-top: 6px solid #D60103;
+  border-bottom: 5px solid #D60103;
+}
+
+h2 {
+  color: white;
+}
+
+ul {
+  padding: 0;
+}
+
+.startQuiz, .box {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   text-align: center;
   margin: auto;
-  padding: 1em;
-  border: 1px solid black;
-  margin-bottom: 10px;
+  padding: 1px;
+  border: 1px solid #002F69;
+  background-color: #002F69;
 }
 
 .stats {
   text-decoration: none;
-  text-align: center;
   display: inline-block;
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.questionImage {
+  padding: 25px 25px 0px 25px;
+  background: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+fieldset, legend {
+  background: white;
+  border: white;
+}
+
+fieldset {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: white;
+}
+
+.questionText {
+  border: white;
 }
 
 .imageArea {
-  border: 1px solid black;
-  width: 300px;
+  border: 1px solid #002F69;
+  border-radius: 4px;
+}
+
+.gifArea {
+  border: 1px solid #002F69;
+  border-radius: 3px;
 }
 
 .nflLogo {
   background-color: white;
-  width: 300px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.form, .finalInterior, .responseInterior {
+  background-color: white;
+  border-radius: 4px;
+}
+
+.radio, .answer {
+  margin: 4px 4px 0 0;
+}
+
+.button {
+  padding: 3px 6px;
+}
+
+.startButton {
+  background: white;
+  margin: 20px auto;
+  border: white;
+}
+
+.button:not(.startButton) {
+  background: white;
+  border: 1px solid #D60103;
+  border-radius: 2px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #D3D3D3;
+  color: #D60103;
+}
+
+.button:active {
+  background-color: #D60103;
+  color: white;
+}
+
+@media screen and (min-width: 200px) {
+  .nflLogo {
+    width: 250px;
+  }
+  .imageArea, .gifArea {
+    width: 226px;
+  }
+  .questionText {
+    width: 278px;
+    padding: 5px 25px;
+    margin-bottom: 10px;
+  }
+  .form, .finalInterior, .responseInterior {
+    width: 278px;
+  }
+  .header {
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 1.75em;
+    padding: 15px 25px;
+    margin-top: 5px;
+  }
+  h2 {
+    font-size: 1.2em;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 20px;
+  }
+  h3 {
+    font-size: 1em;
+    margin: 17px auto 15px;
+  }
+  ul, p, .questionText, .answer {
+    font-size: 0.9em;
+  }
+  .imageArea {
+    margin-bottom: 5px;
+  }
+  .button {
+    font-size: 0.7em;
+  }
+  ul {
+    margin: 0 auto 10px;
+  }
+  .submitButton, .nextQuestionButton, .restartQuizButton {
+    margin: 15px auto 18px;
+  }
+  .movingOn {
+    margin-top: 12px;
+  }
+  .footballKnowledge {
+    padding-top: 15px;
+  }
+  .questionsCorrect {
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .nflLogo {
+    width: 350px;
+  }
+  .imageArea, .gifArea {
+    width: 326px;
+  }
+  .questionText {
+    width: 378px;
+    padding: 2px 25px 0;
+    margin-bottom: 12px;
+  }
+  .form, .finalInterior, .responseInterior {
+    width: 378px;
+  }
+  .header {
+    margin-bottom: 30px;
+  }
+  h1 {
+    font-size: 2.25em;
+    padding: 20px 25px 15px;
+    margin-top: 5px;
+  }
+  h2 {
+    font-size: 1.5em;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+  }
+  h3 {
+    font-size: 1.2em;
+    margin: 22px auto 20px;
+  }
+  ul, p, .questionText, .answer {
+    font-size: 1em;
+  }
+  .imageArea {
+    margin-bottom: 15px;
+  }
+  .button {
+    font-size: 0.8em;
+  }
+  ul {
+    margin: 5px auto 15px;
+  }
+  .submitButton, .nextQuestionButton, .restartQuizButton {
+    margin: 18px auto 22px;
+  }
+  .movingOn {
+    margin-top: 15px;
+  }
+  .footballKnowledge {
+    padding-top: 22px;
+  }
+  .questionsCorrect {
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .nflLogo {
+    width: 400px;
+  }
+  .imageArea, .gifArea {
+    width: 376px;
+  }
+  .questionText {
+    width: 428px;
+    padding: 8px 25px 0;
+    margin-bottom: 18px;
+  }
+  .form, .finalInterior, .responseInterior {
+    width: 428px;
+  }
+  h1 {
+    font-size: 2.75em;
+    padding: 25px 25px 20px;
+    margin-top: 10px;
+  }
+  h2 {
+    font-size: 2em;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 40px;
+  }
+  h3 {
+    margin: 27x auto 25px;
+  }
+  ul, p, .questionText, .answer {
+    font-size: 1.2em;
+  }
+  .imageArea {
+    margin-bottom: 25px;
+  }
+  .button {
+    font-size: 0.9em;
+  }
+  ul {
+    margin: 10px auto 20px;
+  }
+  .submitButton, .nextQuestionButton, .restartQuizButton {
+    margin: 20px auto 25px;
+  }
+  .movingOn {
+    margin-top: 20px;
+  }
+  .footballKnowledge {
+    padding-top: 22px;
+  }
+  .questionsCorrect {
+    padding-bottom: 25px;
+  }
 }
