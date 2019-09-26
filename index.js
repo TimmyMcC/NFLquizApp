@@ -258,7 +258,7 @@ function finalScore() {
   return $('.final').html(
     `<div class="finalInterior">
         <h3>We're done with the quiz!</h3>
-        <p class="questionsCorrect">You got ${score} questions correct.</p>
+        <p class="questionsCorrect">You got ${score} of 7 questions correct.</p>
         <div>
 				  <img class="gifArea" src="${array[0]}" alt="${array[1]}" />
         </div>
